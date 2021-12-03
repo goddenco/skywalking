@@ -1,5 +1,30 @@
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: info
 management:
   endpoints:
-    web:
-      exposure:
-        include: info
+    health:
+      show-details: always
+server:
+  port: 8082
+
+#邮箱配置
+#spring:
+#  mail:
+#    host: smtp.qq.com
+#    #发送者邮箱账号
+#    username: 245149379@qq.com
+#    #发送者密钥
+#    password: kjtxbgbvkyfycaef
+#    default-encoding: utf-8
+#    port: 465   #端口号465或587
+#    protocol: smtp
+#    properties:
+#      mail:
+#        debug:
+#          false
+#        smtp:
+#          socketFactory:
+#            class: javax.net.ssl.SSLSocketFactory

@@ -64,4 +64,9 @@ public class CaseController {
         return SUCCESS;
     }
 
+    @RequestMapping("/log")
+    @ResponseBody
+    public String testLog() {
+        return service.tstLog();
+    }
 }

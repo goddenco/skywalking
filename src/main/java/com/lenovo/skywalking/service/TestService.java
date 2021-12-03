@@ -28,4 +28,13 @@ public class TestService {
         throw new TestException(new TestListedException());
     }
 
+    public String tstLog() {
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        int i = 1 / 0;
+        return "1111";
+    }
 }
